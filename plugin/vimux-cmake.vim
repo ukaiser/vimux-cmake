@@ -18,3 +18,7 @@ endfunction
 function! CMakeInstall()
   call VimuxRunCommand("clear " . s:separator . " cmake  --install build ")
 endfunction
+
+function! CMakeBuildInstall()
+  call VimuxRunCommand("clear " . s:separator . " cmake  --build build " . s:separator . " cmake  --install build ")
+endfunction
