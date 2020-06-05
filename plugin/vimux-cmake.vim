@@ -1,5 +1,6 @@
 command! CMakeBuild :call CMakeBuild()
 command! CMakeInstall :call CMakeInstall()
+command! CMakeBuildInstall :call CMakeBuildInstall()
 
 function! ShellCommandSeperator()
   if empty(matchstr($SHELL, 'fish'))
